@@ -50,7 +50,11 @@
 <li><a href="http://d-h.st/BrI">php_igbinary-5.3-vs9-nts-c35d48.dll</a></li>
 </ul><h1>Install instructions</h1>
 
-<p>Put both <code>php_redis_*.dll</code> and <code>php_igbinary_*.dll</code> in your php extensions folder and add both to <code>php.ini</code>.</p>
+<p>Put both <code>php_redis_*.dll</code> and <code>php_igbinary_*.dll</code> in your php extensions folder and add both to <code>php.ini</code> (load igbinary before phpredis):</p>
+
+<div class="highlight"><pre><span class="na">extension</span><span class="o">=</span><span class="s">php_igbinary_*.dll</span>
+<span class="na">extension</span><span class="o">=</span><span class="s">php_redis_*.dll</span>
+</pre></div>
 
 <h1>Compile flags</h1>
 
