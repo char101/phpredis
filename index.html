@@ -56,6 +56,8 @@
 <span class="na">extension</span><span class="o">=</span><span class="s">php_redis_*.dll</span>
 </pre></div>
 
+<p>Use the <code>ts</code> (<code>threadsafe</code>) when using PHP as a module (e.g. apache module) where requests are processed using threads. Use the <code>nts</code> (<code>nonthreadsafe</code>) when running PHP as a process (e.g. with IIS/fastcgi). The <code>nts</code> version is generally faster than the <code>ts</code> version.</p>
+
 <h1>Compile flags</h1>
 
 <p><code>--enable-redis=shared</code>
